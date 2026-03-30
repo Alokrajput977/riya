@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Riya Master Ji | Data Analyst Roadmap & Jobs</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== MODAL (Apply Form) ========== -->
+  <div id="applyModal" class="modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fas fa-paper-plane"></i> Quick Apply</h3>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p class="applying-for">Applying for: <strong id="modalJobTitle">Frontend Developer</strong></p>
+        <form id="applyForm">
+          <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" id="applicantName" placeholder="Full name" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="applicantEmail" placeholder="Email address" required>
+          </div>
+          <div class="input-group">
+            <i class="fas fa-file-alt"></i>
+            <textarea rows="2" placeholder="Short intro / portfolio link (optional)"></textarea>
+          </div>
+          <button type="submit" class="btn-submit-apply"><i class="fas fa-check-circle"></i> Submit Application</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN WEBSITE -->
+  <div class="site-wrapper">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo-area">
+          <i class="fas fa-crown"></i>
+          <span class="logo-text">Riya Master Ji</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#jobs">Jobs</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+        </ul>
+        <div class="nav-highlight">
+          <i class="fas fa-chart-line"></i> Data Analyst Focus
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION : HEADING "Riya Master Ji" prominent -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+      
+        <h1 class="hero-title">Riya <span class="glow-text">Master Ji</span></h1>
+        <div class="hero-sub">
+          <p>Your complete guide to becoming a Data Analyst — from zero to expert with real timelines, tools, and job opportunities.</p>
+        </div>
+        <div class="hero-actions">
+          <a href="#jobs" class="btn-primary"><i class="fas fa-search"></i> Explore jobs</a>
+          <a href="#roadmap" class="btn-outline"><i class="fas fa-map-signs"></i> View roadmap</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED JOBS SECTION (with time period & all info) -->
+
+    <!-- ROADMAP SECTION: FULL DATA ANALYST ROADMAP -->
+    <section id="roadmap" class="roadmap-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-road"></i> structured path</span>
+          <h2>Data Analyst <span class="highlight">Complete Roadmap</span></h2>
+          <p>From foundations to expert — every milestone, timeline, and resource you need</p>
+        </div>
+
+        <div class="roadmap-timeline">
+          <!-- Stage 1 -->
+          <div class="timeline-item" data-stage="1">
+            <div class="timeline-marker">
+              <div class="marker-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="stage-badge">Stage 1 · 4-6 weeks</div>
+              <h3>Foundations & Mindset</h3>
+              <div class="skills-list">
+                <span>📊 Excel / Google Sheets</span>
+                <span>📈 Statistics basics</span>
+                <span>🧠 Analytical thinking</span>
+                <span>📝 Data literacy</span>
+              </div>
+              <div class="info-text">
+                <p><strong>🎯 Goal:</strong> Understand data types, central tendency, variance, and basic formulas. Master pivot tables, VLOOKUP, and data cleaning in Excel.</p>
+                <p><strong>📅 Timeframe:</strong> 1 month (4–6 hrs/week). Complete a mini project: Sales Dashboard in Excel.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="timeline-item" data-stage="2">
+            <div class="timeline-marker">
+              <div class="marker-icon"><i class="fas fa-database"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="stage-badge">Stage 2 · 6-8 weeks</div>
+              <h3>SQL Mastery</h3>
+              <div class="skills-list">
+                <span>🛢️ SELECT, WHERE, JOINs</span>
+                <span>🔍 Subqueries & CTEs</span>
+                <span>📋 Window Functions</span>
+                <span>⚡ Query Optimization</span>
+              </div>
+              <div class="info-text">
+                <p><strong>🎯 Goal:</strong> Write complex queries, aggregate data, and extract insights from relational databases (MySQL, PostgreSQL).</p>
+                <p><strong>📅 Timeframe:</strong> 6–8 weeks. Practice on LeetCode / HackerRank. Build a portfolio project: "Analyzing e‑commerce sales data using SQL".</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="timeline-item" data-stage="3">
+            <div class="timeline-marker">
+              <div class="marker-icon"><i class="fab fa-python"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="stage-badge">Stage 3 · 8-10 weeks</div>
+              <h3>Python for Analytics</h3>
+              <div class="skills-list">
+                <span>🐍 Pandas & NumPy</span>
+                <span>📊 Matplotlib / Seaborn</span>
+                <span>📓 Jupyter Notebooks</span>
+                <span>🤖 Basic EDA workflows</span>
+              </div>
+              <div class="info-text">
+                <p><strong>🎯 Goal:</strong> Data manipulation, cleaning, and exploratory data analysis (EDA) using Python. Create visualizations that tell stories.</p>
+                <p><strong>📅 Timeframe:</strong> 2–2.5 months. Project: "Global Superstore Sales Analysis with Python".</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="timeline-item" data-stage="4">
+            <div class="timeline-marker">
+              <div class="marker-icon"><i class="fas fa-chart-line"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="stage-badge">Stage 4 · 6-8 weeks</div>
+              <h3>Data Visualization & BI Tools</h3>
+              <div class="skills-list">
+                <span>📈 Tableau / Power BI</span>
+                <span>🎛️ Interactive Dashboards</span>
+                <span>📊 Storytelling with Data</span>
+                <span>📌 KPIs & Metrics</span>
+              </div>
+              <div class="info-text">
+                <p><strong>🎯 Goal:</strong> Design compelling dashboards, connect to data sources, and present insights to stakeholders.</p>
+                <p><strong>📅 Timeframe:</strong> 6–8 weeks. Portfolio: 2 interactive dashboards (Sales Performance, Customer Churn).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="timeline-item" data-stage="5">
+            <div class="timeline-marker">
+              <div class="marker-icon"><i class="fas fa-brain"></i></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="stage-badge">Stage 5 · 4-6 weeks</div>
+              <h3>Advanced Analytics & Soft Skills</h3>
+              <div class="skills-list">
+                <span>📉 A/B Testing</span>
+                <span>🧠 Regression basics</span>
+                <span>💬 Communication & Presentation</span>
+                <span>📄 Resume & Case Studies</span>
+              </div>
+              <div class="info-text">
+                <p><strong>🎯 Goal:</strong> Understand business impact, run experiments, and ace technical interviews. Build a capstone project that combines SQL, Python, and BI.</p>
+                <p><strong>📅 Timeframe:</strong> 1 month. Final project: "End-to-end analysis of marketing campaign ROI".</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional resources / Certifications -->
+        <div class="roadmap-resources">
+          <h4><i class="fas fa-certificate"></i> Recommended Certifications & Resources</h4>
+          <div class="resource-grid">
+            <div class="resource-item">📘 Google Data Analytics Professional Certificate</div>
+            <div class="resource-item">📘 IBM Data Analyst Professional Certificate</div>
+            <div class="resource-item">📘 Microsoft Power BI Data Analyst Associate</div>
+            <div class="resource-item">📘 SQL for Data Science (Coursera)</div>
+            <div class="resource-item">📘 "Storytelling with Data" – Cole Nussbaumer</div>
+            <div class="resource-item">📘 Mode Analytics SQL Tutorial</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <i class="fas fa-crown"></i> Riya Master Ji
+            <p>Empowering data careers with clarity and confidence.</p>
+          </div>
+          <div class="footer-links">
+            <span>© 2025 Riya Master Ji — All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
